@@ -1,0 +1,36 @@
+.code-section { margin-bottom: 2.5rem; }
+.code-box {
+  background: #0d1117; border: 1px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+.code-bar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 16px; background: #161b22;
+  border-bottom: 1px solid var(--border);
+}
+.code-fname {
+  font-family: var(--font-mono); font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+.code-bar-dots { display: flex; gap: 5px; margin-left: auto; margin-right: 12px; }
+.dot-r, .dot-y, .dot-g {
+  width: 10px; height: 10px; border-radius: 50%;
+}
+.dot-r { background: #ff5f56; }
+.dot-y { background: #ffbd2e; }
+.dot-g { background: #27c93f; }
+
+.copy-btn {
+  padding: 5px 14px; background: rgba(99,102,241,0.08);
+  border: 1px solid rgba(99,102,241,0.18); border-radius: 50px;
+  color: var(--accent-indigo); font-size: 0.72rem; cursor: pointer;
+  font-family: var(--font-body); transition: var(--transition);
+}
+.copy-btn:hover { background: rgba(99,102,241,0.15); }
+
+.code-pre {
+  padding: 1.25rem; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.75rem;
+  line-height: 1.7; color: #c9d1d9; white-space: pre;
+  max-height: 500px;
+}
