@@ -1,4 +1,4 @@
-import { SensorProvider } from './context/SensorContext';
+import { SensorProvider, useSensors } from './context/SensorContext';
 import ParticlesBg from './components/ParticlesBg';
 import Header from './components/Header';
 import SensorCards from './components/SensorCards';
@@ -8,9 +8,13 @@ import Charts from './components/Charts';
 import EventLog from './components/EventLog';
 import CircuitDiagram from './components/CircuitDiagram';
 import CodeSection from './components/CodeSection';
+import useBeeper from './hooks/useBeeper';
 import './App.css';
 
 function Dashboard() {
+  const { state } = useSensors();
+  useBeeper(state.beeperActive);
+
   return (
     <>
       <ParticlesBg />
