@@ -1,16 +1,23 @@
-# React + Vite
+# Smart Home Automation Monitor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive dashboard that simulates an ESP32 smart home system with temperature, light and motion sensors, and shows how the home reacts in real time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Simulated DHT11 temperature, LDR light and PIR motion sensors, controlled with sliders, buttons and preset scenarios
+- Automatic outputs: a light bulb, a blinking alert, a relay and a buzzer (played with the Web Audio API)
+- Room visualisation, live sensor charts and an event log
+- Circuit diagram and the matching Arduino code for the ESP32
 
-## React Compiler
+> Sensor values are simulated in the browser; the dashboard is not connected to real hardware.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+React · Vite · CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
